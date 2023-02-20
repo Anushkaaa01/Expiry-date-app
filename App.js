@@ -8,6 +8,7 @@ import List from './components/List';
 import MainScreen from './components/MainScreen';
 import Scanner from './components/Scanner';
 import EnterManually from './components/enterManually';
+import Recipe from './components/Recipes';
 
 function MainView({ navigation }) {
   return (
@@ -28,6 +29,13 @@ function MainView({ navigation }) {
             onPress={() => navigation.navigate('List')}
             style={styles.buttonMain}>
             <Text style={styles.txtButton}>List</Text>
+          </TouchableHighlight>
+            <TouchableHighlight
+            activeOpacity={0.6}
+            underlayColor="#929982"
+            onPress={() => navigation.navigate('Recipe')}
+            style={styles.buttonMain}>
+            <Text style={styles.txtButton}>Recipes</Text>
           </TouchableHighlight>
         </View>
       </ImageBackground>
@@ -100,6 +108,25 @@ function ScanView({ navigation }) {
   );
 }
 
+function RecipeView({ navigation }) {
+  return (
+    <View style={styles.box}>
+      <ImageBackground source={require('./assets/food3.jpg')} style={styles.backgroundImage}>
+        <View style={styles.container}>
+          <Recipe/>
+          <TouchableHighlight
+            activeOpacity={0.6}
+            underlayColor="#929982"
+            onPress={() => navigation.navigate('Main')}
+            style={styles.buttonWrap}>
+            <Text style={styles.txtBack}>Back</Text>
+          </TouchableHighlight>
+        </View>
+      </ImageBackground>
+    </View>
+  );
+}
+
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -112,6 +139,7 @@ export default function App() {
         <Stack.Screen name="List" component={ListView} />
         <Stack.Screen name="Scanner" component={ScanView} />
         <Stack.Screen name="EnterManually" component={EnterManuallyView} />
+        <Stack.Screen name="Recipe" component={RecipeView} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -136,10 +164,10 @@ const styles = StyleSheet.create({
   },
   buttonMain: {
     alignItems: 'center',
-    height: 90,
+    height: 70,
     width: 162,
     margin: 10,
-    padding:10,
+    padding:7,
     borderRadius: 18,
     backgroundColor: '#929982',
     borderWidth: 3,
@@ -149,7 +177,7 @@ const styles = StyleSheet.create({
   txtButton: {
     textAlign: 'center',
     marginTop: 10,
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: 'bold',
     color: '#252525',
   },
@@ -196,3 +224,4 @@ const styles = StyleSheet.create({
     color: '#252525',
   },
 });
+

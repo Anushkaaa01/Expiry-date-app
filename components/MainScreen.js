@@ -5,7 +5,7 @@ export default function MainScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>
 
-        Expiry List
+        FreshCheck
 
       </Text>
       <Text style={styles.paragraph}>
@@ -32,11 +32,11 @@ const styles = StyleSheet.create({
     color: '#929982',
     fontWeight: 'bold',
     textAlign: 'center',
-    paddingTop: 40,
+    paddingTop: 120,
   },
   paragraph: {
     margin: 20,
-    marginTop: 20,
+    marginTop: 10,
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
