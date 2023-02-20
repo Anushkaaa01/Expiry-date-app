@@ -1,11 +1,15 @@
-# Sample Snack app
+# Fresh Check
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+The food expiry checking app is a mobile application that helps users keep track of the expiration dates of the food items in their homes. The app has the following features:
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo-cli](https://docs.expo.io/get-started/installation).
+Scan barcode: The app allows users to scan the barcode of the food item to automatically get the product information and expiration date.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+Manual entry: If a product doesn't have a barcode or if the barcode is unreadable, the user can manually enter the product information and expiration date.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io/c/snack).
+Expiration alerts: The app sends expiration alerts to the user before the food item expires so that they can use or discard it before it goes bad.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+Inventory management: The app keeps track of the inventory of food items in the user's home, showing which items are about to expire and which items need to be restocked.
+
+Recipe ideas: The app could provide recipe ideas based on the food items that are about to expire, to help users use up their food before it goes bad.
+
+Overall, this app would help users reduce food waste and save money by providing them with a better understanding of the food items they have at home and when they need to be used or discarded.
